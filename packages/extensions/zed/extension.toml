@@ -1,0 +1,36 @@
+id = "OPENCRAFT"
+name = "OPENCRAFT"
+description = "The open source coding agent."
+version = "1.15.5"
+schema_version = 1
+authors = ["Anomaly"]
+repository = "https://github.com/anomalyco/OPENCRAFT"
+
+[agent_servers.OPENCRAFT]
+name = "OPENCRAFT"
+icon = "./icons/OPENCRAFT.svg"
+
+[agent_servers.OPENCRAFT.targets.darwin-aarch64]
+archive = "https://github.com/anomalyco/OPENCRAFT/releases/download/v1.15.5/OPENCRAFT-darwin-arm64.zip"
+cmd = "./OPENCRAFT"
+args = ["acp"]
+
+[agent_servers.OPENCRAFT.targets.darwin-x86_64]
+archive = "https://github.com/anomalyco/OPENCRAFT/releases/download/v1.15.5/OPENCRAFT-darwin-x64.zip"
+cmd = "./OPENCRAFT"
+args = ["acp"]
+
+[agent_servers.OPENCRAFT.targets.linux-aarch64]
+archive = "https://github.com/anomalyco/OPENCRAFT/releases/download/v1.15.5/OPENCRAFT-linux-arm64.tar.gz"
+cmd = "./OPENCRAFT"
+args = ["acp"]
+
+[agent_servers.OPENCRAFT.targets.linux-x86_64]
+archive = "https://github.com/anomalyco/OPENCRAFT/releases/download/v1.15.5/OPENCRAFT-linux-x64.tar.gz"
+cmd = "./OPENCRAFT"
+args = ["acp"]
+
+[agent_servers.OPENCRAFT.targets.windows-x86_64]
+archive = "https://github.com/anomalyco/OPENCRAFT/releases/download/v1.15.5/OPENCRAFT-windows-x64.zip"
+cmd = "./OPENCRAFT.exe"
+args = ["acp"]
